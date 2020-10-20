@@ -16,7 +16,7 @@ h2{
 #mario-chat{
     max-width: 600px;
     margin: 30px auto;
-    border: 5px solid #aaa0;
+    border: 5px solid rgba(255, 17, 17, 0);
     box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
     border-radius: 1.4rem;
     background-color: rgb(0, 0, 0);
@@ -25,7 +25,8 @@ h2{
 #chat-window{
     height: 500px;
     overflow: auto;
-    background: #1c2168;
+    /* background: #1c2168; */
+    /* background: #94c1ea; */
 }
 
 #output p{
@@ -33,8 +34,8 @@ h2{
     margin: 0 20px;
     /* border-bottom: 1px solid #000000; */
     color: rgb(255, 255, 255);
-    background-color: rgb(72 177 162);
-    margin-top: 9px;
+   background-color: rgb(2 18 62) ;
+      margin-top: 9px;
     border-radius: 1.5em;
 }
 
@@ -93,6 +94,7 @@ button{
     /* margin-left: 450px; */
     color: white;
     border-color: snow;
+    cursor: pointer;
     
 }
 newbutn{
