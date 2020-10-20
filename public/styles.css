@@ -10,6 +10,7 @@ h2{
     padding: 10px 20px;
     color: #ffffff;
     text-align: center;
+    text-transform: uppercase;
 }
 
 #mario-chat{
@@ -17,7 +18,7 @@ h2{
     margin: 30px auto;
     border: 5px solid #aaa0;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
-    border-radius: 2rem;
+    border-radius: 1.4rem;
     background-color: rgb(0, 0, 0);
 }
 
@@ -32,8 +33,9 @@ h2{
     margin: 0 20px;
     /* border-bottom: 1px solid #000000; */
     color: rgb(255, 255, 255);
-    background-color: rgb(83, 81, 77);
+    background-color: rgb(72 177 162);
     margin-top: 9px;
+    border-radius: 1.5em;
 }
 
 #feedback p{
@@ -57,13 +59,16 @@ input{
     padding: 10px 20px;
     box-sizing: border-box;
     background: #eee;
-    border: 0;
-    display: block;
-    width: 100%;
-    background: #fff;
-    border-bottom: 1px solid #eee;
+    /* border: 0; */
+    display: inline-flex;
+    width: 65%;
+    background: #d2d2d2;
+    border: 1px solid #000;
     font-family: Nunito;
     font-size: 16px;
+    color: black;
+    margin: 4px;
+    margin-bottom: 0.8rem;
 }
 /* 
 button{
@@ -79,15 +84,42 @@ button{
 
 button{
     background-color: #1c2168;
-    margin: 1em;
+    /* margin: 1em; */
     font-size: 20px;
-    border: 0;
+    /* border: 0; */
     padding: 12px 0;
     width: 20%;
     border-radius: 4rem;
-    margin-left: 450px;
+    /* margin-left: 450px; */
     color: white;
+    border-color: snow;
     
+}
+newbutn{
+    background-color: #1c2168;
+    /* margin: 1em; */
+    font-size: 20px;
+    /* border: 0; */
+    padding: 12px 0;
+    width: 20%;
+    border-radius: 4rem;
+    /* margin-left: 450px; */
+    color: white;
+    border-color: snow;
+}
+newinpt{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #eee;
+    /* border: 0; */
+    display: flex;
+    width: 65%;
+    background: #d2d2d2;
+    border: 1px solid #000;
+    font-family: Nunito;
+    font-size: 16px;
+    color: black;
+    margin: 4px;
 }
 
 .color-change-4x {
