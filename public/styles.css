@@ -84,17 +84,20 @@ button{
 } */
 
 button{
-    background-color: #1c2168;
-    /* margin: 1em; */
-    font-size: 20px;
-    /* border: 0; */
-    padding: 12px 0;
-    width: 20%;
-    border-radius: 4rem;
-    /* margin-left: 450px; */
-    color: white;
-    border-color: snow;
-    cursor: pointer;
+  
+  background-color: #0c58e275;
+  /* background-color: #1c2168; */
+  /* margin: 1em; */
+  font-size: 20px;
+  /* border: 0; */
+  padding: 12px 0;
+  width: 20%;
+  border-radius: 4rem;
+  /* margin-left: 450px; */
+  color: rgb(255 255 255);
+  border-color: rgb(255, 255, 255);
+  border-width: 4px;
+  cursor: pointer;
     
 }
 newbutn{
@@ -131,16 +134,16 @@ newinpt{
 
 @keyframes color-change-4x {
   0% {
-    background: #88ffb0;
+    background: #8e8f8e;
   }
   33.3333% {
-    background: #f5ff9e;
+    background: #797979;
   }
   66.666% {
-    background: #88ffb0;
+    background: #383838;
   }
   100% {
-    background: #f5ff9e;
+    background: #504e4e;
   }
 }
 .slide-in-elliptic-bottom-fwd {
