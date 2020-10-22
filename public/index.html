@@ -1,38 +1,101 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>New Chat</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
-        <link href="/styles.css" rel="stylesheet" />
-    </head>
-    <body class="color-change-4x">
 
-        <div class="slide-in-elliptic-bottom-fwd" id="mario-chat">
-            <h2>Fast Chat</h2>
-            <div id="chat-window">
-                <div id="output"></div>
-                <div id="feedback"></div>
-            </div>
-            <div>
-            <div class="col-md-8">
-                <input id="handle" type="text" placeholder="Handle" />
-                <button id="send">Send</button>
-                <input id="message" type="text" placeholder="Message" />
+<head>
+    <meta charset="utf-8">
+    <title>New Chat</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-            </div>
-            <!-- <div class="col-md-4">
-            <button id="send">Send</button>
-        </div> -->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <link href="/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="jumbotron text-center color-change-2x" style="background-color: ivory">
+        <h1 style="font-size: 80px;">Fast Chat</h1>
     </div>
 
-        </div>
-       
+    <div class="row">
 
-        <!-- <div class="float-right">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-8">
+
+            <input type="button" value="Let's Chat" id="btn1" style="position: absolute;">
+            <br>
+            <br>
+            <!-- <hr id="line"> -->
+
+            <div class="slide-in-blurred-top" id="mario-chat">
+                <h2>Fast Chat</h2>
+                <div id="chat-window">
+                    <div id="output"></div>
+                    <div id="feedback"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <input id="handle" type="text" placeholder="Handle" />
+
+                        <input id="message" type="text" placeholder="Message" />
+
+                    </div>
+                    <div class="col-md-4">
+
+                        <button id="send">Send</button>
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+    </div>
+
+
+
+    </div>
+
+
+
+    <!-- <div class="float-right">
 
         </div> -->
-    </body>
-    <script src="/chat.js"></script>
+
+</body>
+<script src="/chat.js"></script>
+<script>
+    document.getElementById("btn1").addEventListener("click",function(){
+
+        var box1=document.getElementById("mario-chat");
+        if(box1.style.display=="none")
+        {
+            box1.style.display="block";
+        }
+        else
+        {
+            box1.style.display="none";
+        }
+    })
+</script>
+
 </html>
