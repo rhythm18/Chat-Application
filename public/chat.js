@@ -20,6 +20,22 @@ message.addEventListener('keypress', function(){
     socket.emit('typing', handle.value);
 })
 
+var keywords = [
+    "mad",
+    "bad",
+    "dog"
+  ];
+
+var n = keywords.includes(message);
+
+document.getElementById("message").innerHTML = n;
+
+// for (i=0;i<keywords.length;i++)
+// {
+// document.write(keywords[i] + "<br >");
+// }
+// document.getElementById("demo").innerHTML = keywords[i];
+
 // Listen for events
 socket.on('chat', function(data){
     feedback.innerHTML = '';
