@@ -18,53 +18,53 @@
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <div class="jumbotron text-center color-change-2x" style="background-color: ivory">
-        <h1 style="font-size: 80px;">Fast Chat</h1>
-    </div>
-
-    <div class="row">
-
-        <div class="col-md-4">
-
+        <div class="jumbotron text-center color-change-2x" style="background-color: ivory">
+            <h1 style="font-size: 80px;">Fast Chat</h1>
         </div>
-        <div class="col-md-8">
 
-            <input type="button" value="Let's Chat" id="btn1" style="position: absolute;">
-            <br>
-            <br>
-            <!-- <hr id="line"> -->
+        <div class="row">
 
-            <div class="slide-in-blurred-top" id="mario-chat">
-                <h2>Fast Chat</h2>
-                <div id="chat-window">
-                    <div id="output"></div>
-                    <div id="feedback"></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-8">
-                        <input id="handle" type="text" placeholder="Handle" />
+            <div class="col-md-4">
 
-                        <input id="message" type="text" placeholder="Message" />
+            </div>
+            <div class="col-md-8">
 
+                <input type="button" value="Let's Chat" id="btn1" style="position: absolute;">
+                <br>
+                <br>
+                <!-- <hr id="line"> -->
+
+                <div class="slide-in-blurred-top" id="mario-chat">
+                    <h2>Fast Chat</h2>
+                    <div id="chat-window">
+                        <div id="output"></div>
+                        <div id="feedback"></div>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <input id="handle" type="text" placeholder="Handle" />
 
-                        <button id="send">Send</button>
+                            <input id="message" type="text" placeholder="Message" />
 
+                        </div>
+                        <div class="col-xs-4">
+
+                            <button id="send">Send</button>
+
+                        </div>
                     </div>
+
+
+
+
+
                 </div>
-
-
-
-
 
             </div>
 
         </div>
-
-    </div>
 
 
 
@@ -84,16 +84,14 @@
 </body>
 <script src="/chat.js"></script>
 <script>
-    document.getElementById("btn1").addEventListener("click",function(){
+    document.getElementById("btn1").addEventListener("click", function () {
 
-        var box1=document.getElementById("mario-chat");
-        if(box1.style.display=="none")
-        {
-            box1.style.display="block";
+        var box1 = document.getElementById("mario-chat");
+        if (box1.style.display == "none") {
+            box1.style.display = "block";
         }
-        else
-        {
-            box1.style.display="none";
+        else {
+            box1.style.display = "none";
         }
     })
 </script>
