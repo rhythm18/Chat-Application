@@ -11,7 +11,10 @@ var server = app.listen(9090, function(){
 var blocked_words = [
     "mad",
     "bad",
-    "dog"
+    "dog",
+    "bitch",
+    "ghost",
+    
 ];
 
 // Static files
