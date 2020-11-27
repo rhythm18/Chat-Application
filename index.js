@@ -1,5 +1,7 @@
+
 var express = require('express');
 var socket = require('socket.io');
+
 
 // App setup
 var app = express();
@@ -8,14 +10,16 @@ var server = app.listen(9090, function(){
 });
 
 // List of restricted/blocked words
-var blocked_words = [
-    "mad",
-    "bad",
-    "dog",
-    "bitch",
-    "ghost",
+// var blocked_words = [
+//     "mad",
+//     "bad",
+//     "dog",
+//     "bitch",
+//     "ghost",
     
-];
+// ];
+
+var blocked_words= require('badwords/array');
 
 // Static files
 app.use(express.static('public'));
